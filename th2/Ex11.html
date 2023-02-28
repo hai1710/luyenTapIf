@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luong = parseInt(prompt("nhập tiền lương của bạn là:", ""));
+    if (luong > 15000000) {
+        thue = luong * 30 / 100;
+        document.write("tiền thuế là: " + thue)
+    } else if (luong >= 7000000) {
+        thue = luong * 20 / 100;
+        document.write("tiền thuế là: " + thue)
+    } else {
+        thue = luong * 10 / 100;
+        document.write("tiền thuế là: " + thue)
+    }
+</script>
+</body>
+</html>
