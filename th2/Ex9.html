@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhập a:', ''));
+    let b = parseInt(prompt('nhập b', ''));
+    let c = parseInt(prompt('nhập c:', ''));
+    if (a > 0 && b > 0 && c > 0) {
+        if (a + b > c) {
+            if (a + c > b) {
+                if (b+c>a){
+                    document.write("a,b,c là cạnh của hình tam giác");
+                } else {
+                    document.write("a,b,c không phải là cạnh của 1 hình tam giác");
+                }
+            }else {
+                document.write("a,b,c không phải là cạnh của 1 hình tam giác");
+            }
+        }else {
+            document.write("a,b,c không phải là cạnh của 1 hình tam giác");
+        }
+    }else {
+        document.write("a,b,c không phải là cạnh của 1 hình tam giác");
+    }
+</script>
+</body>
+</html>
