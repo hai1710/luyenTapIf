@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kt = parseInt(prompt('nhập điểm kiểm tra:', ''));
+    let gk = parseInt(prompt('nhập điểm giữa kỳ', ''));
+    let ck = parseInt(prompt('nhập điểm cuối kỳ', ''));
+    tk = (kt + gk + ck) / 3
+    if (tk < 8) {
+        if (tk < 6.5) {
+            if (tk < 4) {
+                document.write('điểm' + tk + ' học sinh yếu');
+            } else {
+                document.write('điểm' + tk + 'học sinh trung bình');
+            }
+        } else {
+            document.write('điểm' + tk + 'học sinh tiên tiến');
+        }
+    } else {
+        document.write('điểm' + tk + 'học sinh giỏi');
+    }
+</script>
+</body>
+</html>
