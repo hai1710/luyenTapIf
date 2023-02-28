@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a= parseInt(prompt('nhập a: ',''));
+  let b= parseInt(prompt('nhập b:',''));
+  let c= parseInt(prompt('nhập c:',''));
+  let delta = b*b-4*a*c;
+  let x1= (-b-Math.sqrt(delta))/2*a;
+  let x2= (-b+Math.sqrt(delta))/2*a;
+  if (delta <0){
+      document.write('phương trình vô nghiệm')
+  } else if (delta == 0){
+      document.write('phương trình có nghiệm là:' + x1)
+  } else {
+      document.write('phương trình có 2 nghiệm là:' + x1 +'và '+ x2)
+  }
+</script>
+</body>
+</html>
