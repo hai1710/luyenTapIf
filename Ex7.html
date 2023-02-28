@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phi
+    let phut = parseInt(prompt('nhập số phút: ', ""))
+    let phicuoc = 25000;
+    if (phut > 200) {
+        phi = ((phut - 200) * 200 + 150 * 400 + 50 * 600) + phicuoc;
+        document.write(phi + 'VNĐ')
+    } else if (phut > 50) {
+        phi = ((phut - 50) * 400 + 50 * 60) + phicuoc
+        document.write(phi + "VNĐ")
+    } else {
+        phi = phut * 600 + phicuoc
+        document.write(phi + "VNĐ")
+    }
+</script>
+</body>
+</html>
