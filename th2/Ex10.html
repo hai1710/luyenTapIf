@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dien = parseInt(prompt('nhập số kWh đã tiêu thụ: ', ''));
+    let a
+    switch ((dien > 0 && dien < 50) ? 1 : (dien > 51 && dien < 100) ? 2 : 3) {
+        case 1:
+            a = dien * 1678;
+            document.write('số tiền là: ' + a);
+            break;
+        case 2:
+            a = dien * 1734;
+            document.write('số tiền là: ' + a);
+            break;
+        case 3:
+            a = dien * 2014;
+            document.write('số tiền là: ' + a);
+            break;
+    }
+</script>
+</body>
+</html>
